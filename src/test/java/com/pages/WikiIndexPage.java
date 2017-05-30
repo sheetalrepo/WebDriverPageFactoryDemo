@@ -32,9 +32,9 @@ public class WikiIndexPage extends BasePage{
 	public static WebElement searchBoxButton;
 	
 	
-	public WikiIndexPage()  {
-		//super();
-	}
+//	public WikiIndexPage()  {
+//		//super();
+//	}
 
 
 	public WikiIndexPage(WebDriver driver) throws MalformedURLException {

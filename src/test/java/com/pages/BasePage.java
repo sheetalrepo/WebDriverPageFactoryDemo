@@ -39,7 +39,6 @@ public class BasePage {
 	Logger log = Logger.getLogger(BasePage.class);
 	WebDriverWait wait;
 
-	// singleton implemented
 	private static BasePage instance = null;
 
 	/**
@@ -47,10 +46,7 @@ public class BasePage {
 	 */
 	public static BasePage getInstance() throws MalformedURLException {
 		PropertyConfigurator.configure("log4j.properties");
-
-		// if (instance == null) {
 		instance = new BasePage();
-		// }
 		return instance;
 	}
 
