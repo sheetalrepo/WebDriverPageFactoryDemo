@@ -26,6 +26,7 @@ public class ListenMe {
 
 	@AfterClass
 	public void tearDown() throws InterruptedException, IOException {
+		System.out.println("Base instance value: "+basePage);
 		basePage.quit();
 	}
 
