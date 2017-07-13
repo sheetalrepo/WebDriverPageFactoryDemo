@@ -69,7 +69,7 @@ public class BasePage {
 		String driverToRun = getProperties().get("driver");
 
 		if (driverToRun.equals("firefox")) {
-			// driver = DriverRepo.FIREFOX.getDriver();
+			//driver = DriverRepo.FIREFOX.getDriver();
 			String path = System.getProperty("user.dir");
 			System.setProperty("webdriver.gecko.driver", path + "/src/test/resources/drivers/geckodriver");
 			driver = new FirefoxDriver();
