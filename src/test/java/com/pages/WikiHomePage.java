@@ -29,9 +29,13 @@ public class WikiHomePage extends BasePage {
 	@FindBy(xpath = ".//li[@id='interwiki-completelist']/a")
 	public static WebElement completeListLeftLink; // left nav column > bottom side
 
-	@FindBy(linkText = "Donate to Wikipedia")
+	@FindBy(linkText = "Donate")
 	public static WebElement donateToWikiLink;
 
+	/**
+	 * Page constructor to initialize driver
+	 * verify any page element to make sure page has been loaded properly
+	 */
 	public WikiHomePage(WebDriver driver) throws MalformedURLException {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

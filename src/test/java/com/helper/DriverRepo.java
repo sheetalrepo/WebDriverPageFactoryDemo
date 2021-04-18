@@ -1,5 +1,9 @@
 package com.helper;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -11,38 +15,37 @@ public enum DriverRepo {
 	FIREFOX {
 		public WebDriver getDriver() {
 			String current_os = System.getProperty("os.name");
-			log.info("Current OS: " + current_os);
-			if (current_os.equals("Mac OS X")) {
+			log.info("##Current OS: " + current_os);
+			if (current_os.contains("Mac")) {
 				log.info("MAC: FF initialized");
-				String path = System.getProperty("user.dir");
-				System.setProperty("webdriver.gecko.driver", path + "/src/test/resources/drivers/geckodriver");
-			} else if (current_os.equals("Windows")) {
+				System.setProperty("webdriver.gecko.driver", getCommonPath("geckodriver.exe"));
+				return new FirefoxDriver();
+			} else if (current_os.contains("Windows")) {
 				log.info("WINDOW: FF initialized");
-				System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", getCommonPath("geckodriver.exe"));
+				return new FirefoxDriver();
 			} else {
-				log.info("Unknown OS Exception");
+				throw new RuntimeException("Invalid OS for Firefox");
 			}
-			return new FirefoxDriver();
 		}
 
 	},
 	CHROME {
 		public WebDriver getDriver() {
 			String current_os = System.getProperty("os.name");
-			log.info("Current OS: " + current_os);
+			log.info("##Current OS: " + current_os);
 
-			if (current_os.equals("Mac OS X")) {
+			if (current_os.contains("Mac")) {
 				log.info("MAC: Chrome initialized");
-				String path = System.getProperty("user.dir");
-				System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
-				return new ChromeDriver();
-			} else if (current_os.equals("Window")) {
-				log.info("WINDOW: Chrome initialized");
-				System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+				System.setProperty("webdriver.chrome.driver", getCommonPath("chromedriver.exe"));
+				return new ChromeDriver();	
+			} else if (current_os.contains("Window")) {
+				log.info("### WINDOW: Chrome initialized");
+				System.setProperty("webdriver.chrome.driver", getCommonPath("chromedriver.exe"));
+				return new ChromeDriver();	
 			} else {
-				log.info("Unknown OS Exception");
+				throw new RuntimeException("Invalid OS for chrome");
 			}
-			return new ChromeDriver();
 		}
 	};
 
@@ -61,4 +64,19 @@ public enum DriverRepo {
 		return driver;
 	}
 
+	
+	public String getCommonPath(String driver) {
+		Path currentRelativePath = Paths.get("");
+		String absPath = currentRelativePath.toAbsolutePath().toString();
+
+		//current project path
+		System.out.println("Absolute Path: " + absPath); 
+		String fileToBeRead = absPath + "\\src\\test\\resources\\drivers\\"+driver;
+		System.out.println("Driver path: " + fileToBeRead);
+		
+		//Backslash for windows + fwd slash for Linux(jenkin) will be handled automatically
+		String fileToBeReadConverted = FilenameUtils.separatorsToSystem(fileToBeRead);
+		System.out.println("Driver Final Path: "+ fileToBeReadConverted);
+		return fileToBeReadConverted;
+	}
 }

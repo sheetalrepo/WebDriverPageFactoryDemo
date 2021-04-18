@@ -21,3 +21,6 @@ mvn clean test -DsuiteXmlFile=testng_listeners.xml -Ddriver=firefox
 Option 2: manually from testng.xml
 
 _____________________________________________________________________
+
+#Todo:
+1. To automatically handle drivers https://github.com/bonigarcia/webdrivermanager

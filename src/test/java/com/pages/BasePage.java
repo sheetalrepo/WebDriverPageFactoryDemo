@@ -47,7 +47,11 @@ public class BasePage {
 	 */
 	public static BasePage getInstance() throws MalformedURLException {
 		PropertyConfigurator.configure("log4j.properties");
-		instance = new BasePage();
+		
+		if(instance == null) {
+			instance = new BasePage();
+		}
+		
 		return instance;
 	}
 
@@ -65,23 +69,17 @@ public class BasePage {
 	}
 
 	public WebDriver getDriver() {
-
 		String driverToRun = getProperties().get("driver");
 
 		if (driverToRun.equals("firefox")) {
-			//driver = DriverRepo.FIREFOX.getDriver();
-			String path = System.getProperty("user.dir");
-			System.setProperty("webdriver.gecko.driver", path + "/src/test/resources/drivers/geckodriver");
-			driver = new FirefoxDriver();
+			driver = DriverRepo.FIREFOX.getDriver();
 			return driver;
 		} else if (driverToRun.equals("chrome")) {
-			//return DriverRepo.CHROME.getDriver();
-			String path = System.getProperty("user.dir");
-			System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
-			driver = new ChromeDriver();
+			driver = DriverRepo.CHROME.getDriver();
 			return driver;
 		} else {
-			return DriverRepo.FIREFOX.getDriver();
+			driver = DriverRepo.FIREFOX.getDriver();
+			return driver;
 		}
 	}
 
