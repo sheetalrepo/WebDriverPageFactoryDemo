@@ -5,6 +5,10 @@ import org.testng.ITestResult;
 
 import com.helper.PropertyFileReader;
 
+/**
+ * 
+ * config.properties > failed_case_retry_count=5
+ */
 public class Retry implements IRetryAnalyzer {
 
 	 private int retryCount = 0;
@@ -13,6 +17,7 @@ public class Retry implements IRetryAnalyzer {
 	 
 	    public boolean retry(ITestResult result) {
 	    	
+			//fetch retry count from property file
 	    	int maxRetryCount = Integer.parseInt(obj.getPropertyMap().get("failed_case_retry_count"));
 	    	
 	        if (retryCount < maxRetryCount) {

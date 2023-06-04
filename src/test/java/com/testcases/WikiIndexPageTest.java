@@ -1,8 +1,11 @@
 package com.testcases;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Map;
 
+import com.helper.ThreadLocalDriver;
+import com.pages.WikiSearchPage;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.pages.BasePage;
 import com.pages.WikiIndexPage;
-import com.pages.WikiHomePage;
+import com.pages.WikiMainPage;
 
 public class WikiIndexPageTest {
 
@@ -21,7 +24,8 @@ public class WikiIndexPageTest {
 
 	BasePage basePage;
 	WikiIndexPage wikiIndexPage;
-	WikiHomePage wikiHomePage;
+	WikiMainPage wikiMainPage;
+	WikiSearchPage wikiSearchPage;
 	Logger log = Logger.getLogger(WikiIndexPageTest.class);
 	
 	
@@ -31,53 +35,48 @@ public class WikiIndexPageTest {
 		log.info("|| WikiIndexPageTest Before Class, thread: " + Thread.currentThread().getName());
 		
 		basePage = BasePage.getInstance();
-		driver = basePage.getDriver();
+		
+		//driver = basePage.getDriver();
+		driver = basePage.getDriverNew();
+
 		map = basePage.getProperties();
-		log.debug("Driver hashcode: "+driver.hashCode());
+		System.out.println("Index: "+Thread.currentThread().getName());
+		System.out.println("Index: "+driver.hashCode());
 	}
 
 	
 	@AfterClass
-	public void tearDown() throws InterruptedException, IOException{
+	public void tearDown() {
+		//basePage.close();
 		basePage.quit();
+		
 	}
 
-	
 	@Test
-	public void verifyEnglishLink() throws InterruptedException, IOException {
+	public void one(){
+		System.out.println("One");
+		basePage.get("https://www.google.es/");
+	}
+
+	//Index > Main Page
+	//@Test
+	public void verifyEnglishLinkAndMore() throws MalformedURLException, InterruptedException {
 		log.info("|| Wiki Index page > method 1, thread : " + Thread.currentThread().getName());
 		
 		basePage.get(map.get("server"));
+		driver.manage().window().maximize();
 		
 		//initialize Index page with driver
 		wikiIndexPage = new WikiIndexPage(driver);
 		wikiIndexPage.clickEnglish();
-
-		//initialize Home page with driver
-		wikiHomePage = new WikiHomePage(driver);
-		String currentUrlHomePage = wikiHomePage.getCurrentUrl();
+		Thread.sleep(2000);
+		
+		//initialize Main page with driver
+		wikiMainPage = new WikiMainPage(driver);
+		String currentUrlHomePage = wikiMainPage.getCurrentUrl();
 
 		Assert.assertTrue(currentUrlHomePage.endsWith("wiki/Main_Page"), "Homepage title is wrong");
 	}
 	
-	
-	@Test
-	public void verifySearchBox() throws InterruptedException, IOException {
-		log.info("|| Wiki Index page, thread > method 2, thread : " + Thread.currentThread().getName());
-		
-		basePage.get(map.get("server"));
 
-		wikiIndexPage = new WikiIndexPage(driver);
-		wikiIndexPage.setTextInSearchBox("peace");
-		wikiIndexPage.clickSearchBoxButton();
-		
-		wikiHomePage = new WikiHomePage(driver);
-		String currentUrlHomePage = wikiHomePage.getCurrentUrl();
-		
-		Assert.assertTrue(currentUrlHomePage.endsWith("wiki/Peace"), "title mismatch");
-	}
-	
-	
-	
-	
 }

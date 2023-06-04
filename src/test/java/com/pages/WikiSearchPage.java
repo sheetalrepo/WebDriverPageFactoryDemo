@@ -1,56 +1,53 @@
 package com.pages;
 
-import java.net.MalformedURLException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class WikiHomePage extends BasePage {
+import java.net.MalformedURLException;
+
+/**
+ * https://en.wikipedia.org/wiki/Peace
+ */
+public class WikiSearchPage extends BasePage {
 
 	/**
 	 * Page elements
 	 */
 	WebDriver driver;
 
+	@FindBy(xpath = "//span[text()='Article']")
+	public static WebElement articleLink;
+
+
 	@FindBy(xpath = ".//div[@id='simpleSearch']/input[1]")
 	public static WebElement searchBox;
-	
-	//OR Condition
-	@FindAll({ 
-		@FindBy(id = "searchButton"),
-		@FindBy(css = "#searchButton") 
-	})
+
+	@FindBy(xpath = "//*[@id='searchform']/div/button")
 	public static WebElement searchButton;
 
-	@FindBy(xpath = ".//li[@id='interwiki-completelist']/a")
-	public static WebElement completeListLeftLink; // left nav column > bottom side
-
-	@FindBy(linkText = "Donate")
-	public static WebElement donateToWikiLink;
-
+	
 	/**
 	 * Page constructor to initialize driver
 	 * verify any page element to make sure page has been loaded properly
 	 */
-	public WikiHomePage(WebDriver driver) throws MalformedURLException {
+	public WikiSearchPage(WebDriver driver) throws MalformedURLException {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		isElementPresent(searchBox);
+		isElementPresent(articleLink);
 	}
 
 	/**
 	 * Actions methods
 	 */
 	public void clickSearchButton() {
-		click(searchButton);
+		searchButton.click();
 	}
 
 	public void clickCompleteListLink() {
-		click(completeListLeftLink);
+		//code
 	}
 
 	/**
@@ -70,7 +67,7 @@ public class WikiHomePage extends BasePage {
 	/**
 	 * Verification methods
 	 */
-	public boolean isSomeDummyElementPresent() {
-		return true;
+	public boolean isSearchButtonPresent() {
+		return isElementPresent(searchButton);
 	}
 }

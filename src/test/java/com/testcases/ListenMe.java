@@ -3,6 +3,7 @@ package com.testcases;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
+import com.listeners.Retry;
 import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
@@ -30,21 +31,24 @@ public class ListenMe {
 		basePage.quit();
 	}
 
-	@Test
+	@Test(retryAnalyzer = Retry.class )
+	//@Test
 	public void testRetryListener() throws InterruptedException {
 		i++;
 		if (i == 3 ){
 			driver.get("https://twitter.com/login");
+			System.out.println("URL: "+driver.getCurrentUrl());
 			Assert.assertTrue(true);
 		}else{
 			driver.get("https://www.bing.com/");
+			System.out.println("URL: "+driver.getCurrentUrl());
 			Thread.sleep(2000);
 			Assert.assertTrue(false);			
 		}
 	}
-	
-	
-	//@Test
+
+
+	@Test(retryAnalyzer = Retry.class )
 	public void testListenersOnFailure() {
 		driver.get("http://www.orkut.com/index.html");
 		Assert.assertTrue(false);

@@ -41,7 +41,7 @@ public enum DriverRepo {
 				return new ChromeDriver();	
 			} else if (current_os.contains("Window")) {
 				log.info("### WINDOW: Chrome initialized");
-				System.setProperty("webdriver.chrome.driver", getCommonPath("chromedriver.exe"));
+				//System.setProperty("webdriver.chrome.driver", getCommonPath("chromedriver.exe"));
 				return new ChromeDriver();	
 			} else {
 				throw new RuntimeException("Invalid OS for chrome");

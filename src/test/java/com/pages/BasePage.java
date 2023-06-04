@@ -7,9 +7,12 @@ import java.net.MalformedURLException;
 
 import java.text.SimpleDateFormat;
 
+import java.time.Duration;
 import java.util.Date;
 import java.util.Map;
 
+import com.helper.DriverFactory;
+import com.helper.ThreadLocalDriver;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -25,6 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.helper.DriverRepo;
 import com.helper.PropertyFileReader;
 import org.apache.commons.io.FileUtils;
+
 
 /**
  * Common class for all web driver functions
@@ -45,7 +49,7 @@ public class BasePage {
 	/**
 	 * log4j need to be initialized once
 	 */
-	public static BasePage getInstance() throws MalformedURLException {
+	public static BasePage getInstance() {
 		PropertyConfigurator.configure("log4j.properties");
 		
 		if(instance == null) {
@@ -83,12 +87,38 @@ public class BasePage {
 		}
 	}
 
+
+	public WebDriver getDriverNew() {
+
+		String driverToRun = getProperties().get("driver");
+
+		if (driverToRun.equals("firefox")) {
+			// driver = DriverRepo.FIREFOX.getDriver();
+			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("firefox"));
+			driver = ThreadLocalDriver.getDriver();
+
+		} else if (driverToRun.equals("chrome")) {
+			// driver = DriverRepo.CHROME.getDriver();
+			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("chrome"));
+			driver = ThreadLocalDriver.getDriver();
+
+		} else {
+			// driver = DriverRepo.FIREFOX.getDriver();
+			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("firefox"));
+			driver = ThreadLocalDriver.getDriver();
+		}
+
+		log.debug("driver has been initialized as:  " + driver);
+		return driver;
+	}
+
+
 	/**
 	 * Common explicit wait methods; Generic can be used be most of the cases
 	 * todo: wait time need to be picked from properties file
 	 */
 	public void waitForVisibilityOfElement(WebElement element) {
-		wait = new WebDriverWait(driver, 10);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 

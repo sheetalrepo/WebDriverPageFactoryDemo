@@ -1,44 +1,46 @@
-package com.pages;
-
-import java.net.MalformedURLException;
+package demo.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import java.net.MalformedURLException;
 
 /**
  * Index Page: https://www.wikipedia.org/
+ *
+ * #Same meaning
+ * @FindBy(id = "searchInput")
+ * @FindBy(how = How.ID, using="searchInput")
+ * 
+ * #Page Factory Method to initialize all elements
+ * PageFactory.initElements(driver, this);
+ * 
  */
-public class WikiIndexPage extends BasePage{
+public class WikiIndexPage extends BasePage {
 
-	
-	/**
-	 * Page elements
-	 */
-	
 	WebDriver driver;
 	
 	@FindBy(xpath="//strong[contains(text(),'English')]")
 	public static WebElement english;
 	
-	@CacheLookup
-	@FindBy (linkText="Italiano")
-	public static WebElement italiano;
-	
-	@FindBy (id="searchInput")
+	@FindBy(how = How.ID, using="searchInput")
 	public static WebElement searchBox;
 	
 	@FindBy(xpath=".//form[@id='search-form']/fieldset/button")
 	public static WebElement searchBoxButton;
-	
+
+	/**
+	 * Page constructor to initialize driver
+	 * verify any page element to make sure page has been loaded properly
+	 */
 	public WikiIndexPage(WebDriver driver) throws MalformedURLException {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		isElementPresent(english);
 	}
-	
 
 	/**
 	 * Actions methods
@@ -47,22 +49,15 @@ public class WikiIndexPage extends BasePage{
 	public void clickEnglish(){
 		click(english);
 	}
-	
-	
-	public void clickItalino(){
-		click(italiano);
-	}
-	
+
 	public void clickSearchBoxButton(){
 		click(searchBoxButton);
 	}
 	
-	
-	/**
-	 * Getters
-	 */
-
-	
+	public void searchWith(String keyword){
+		sendKeys(searchBox, keyword);
+		click(searchBoxButton);
+	}
 	
 	/**
 	 * Setters
