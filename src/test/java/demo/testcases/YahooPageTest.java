@@ -1,10 +1,7 @@
 package demo.testcases;
 
-import demo.pages.YahooPage;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
-import java.text.ParseException;
+;
 
 public class YahooPageTest extends BaseTest{
 

@@ -1,9 +1,6 @@
 package demo.testcases;
 
-import demo.pages.MSNPage;
 import org.testng.annotations.Test;
-import java.io.IOException;
-import java.text.ParseException;
 
 public class MsnPageTest extends BaseTest{
 

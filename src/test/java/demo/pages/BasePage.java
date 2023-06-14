@@ -1,25 +1,10 @@
 package demo.pages;
 
-import com.helper.DriverFactory;
-import com.helper.DriverRepo;
-import com.helper.PropertyFileReader;
-import com.helper.ThreadLocalDriver;
-import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
-import java.util.Map;
 
 
 /**

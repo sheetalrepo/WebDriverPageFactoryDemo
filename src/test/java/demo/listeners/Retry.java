@@ -1,6 +1,6 @@
 package demo.listeners;
 
-import com.helper.PropertyFileReader;
+import demo.helper.PropertyFileReader;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 

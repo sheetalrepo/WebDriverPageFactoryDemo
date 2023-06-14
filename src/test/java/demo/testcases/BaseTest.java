@@ -1,6 +1,6 @@
 package demo.testcases;
 
-import com.helper.PropertyFileReader;
+import demo.helper.PropertyFileReader;
 import demo.helper.DriverFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
