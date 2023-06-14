@@ -24,19 +24,19 @@ public class WikiIndexPage extends BasePage {
 	WebDriver driver;
 	
 	@FindBy(xpath="//strong[contains(text(),'English')]")
-	public static WebElement english;
+	private WebElement english;
 	
 	@FindBy(how = How.ID, using="searchInput")
-	public static WebElement searchBox;
+	private WebElement searchBox;
 	
 	@FindBy(xpath=".//form[@id='search-form']/fieldset/button")
-	public static WebElement searchBoxButton;
+	private WebElement searchBoxButton;
 
 	/**
 	 * Page constructor to initialize driver
 	 * verify any page element to make sure page has been loaded properly
 	 */
-	public WikiIndexPage(WebDriver driver) throws MalformedURLException {
+	public WikiIndexPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

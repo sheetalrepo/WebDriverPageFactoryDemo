@@ -13,19 +13,19 @@ public class MSNPage extends BasePage{
 	WebDriver driver;
 	
 	@FindBy(xpath="//strong[contains(text(),'English')]")
-	public static WebElement english;
+	private WebElement english;
 	
 	@CacheLookup
 	@FindBy (linkText="Italiano")
-	public static WebElement italiano;
+	private WebElement italiano;
 	
 	@FindBy (id="searchInput")
-	public static WebElement searchBox;
+	private WebElement searchBox;
 	
 	@FindBy(xpath=".//form[@id='search-form']/fieldset/button")
-	public static WebElement searchBoxButton;
+	private WebElement searchBoxButton;
 	
-	public MSNPage(WebDriver driver) throws MalformedURLException {
+	public MSNPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

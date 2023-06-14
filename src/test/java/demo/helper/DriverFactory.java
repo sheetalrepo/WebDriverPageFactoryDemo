@@ -8,6 +8,7 @@ public class DriverFactory {
     public static WebDriver createInstance(String browserName) {
         WebDriver driver = null;
        if(browserName.toLowerCase().contains("chrome")){
+            //Not required in updated Selenium version since version 4.5
             //String path = System.getProperty("user.dir");
             //System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
             return new ChromeDriver();

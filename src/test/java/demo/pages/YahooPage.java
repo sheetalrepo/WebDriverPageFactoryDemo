@@ -16,11 +16,11 @@ public class YahooPage extends BasePage {
 	WebDriver driver;
 	
 	@FindBy(id = "Welcome_to_Wikipedia")
-	public static WebElement welcomeLink;
+	private WebElement welcomeLink;
 	
 	
 	@FindBy(xpath = ".//div[@id='simpleSearch']/input[1]")
-	public static WebElement searchBox;
+	private WebElement searchBox;
 	
 	//OR Condition
 	@FindAll({ 

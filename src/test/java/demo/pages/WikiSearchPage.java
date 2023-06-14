@@ -12,13 +12,13 @@ public class WikiSearchPage extends BasePage {
 	WebDriver driver;
 
 	@FindBy(xpath = "//span[text()='Article']")
-	public static WebElement articleLink;
+	private WebElement articleLink;
 
 	@FindBy(xpath = ".//div[@id='simpleSearch']/input[1]")
-	public static WebElement searchBox;
+	private WebElement searchBox;
 
 	@FindBy(xpath = "//*[@id='searchform']/div/button")
-	public static WebElement searchButton;
+	private WebElement searchButton;
 	
 	public WikiSearchPage(WebDriver driver)  {
 		super(driver);

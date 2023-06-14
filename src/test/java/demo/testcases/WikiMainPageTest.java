@@ -25,7 +25,7 @@ public class WikiMainPageTest extends BaseTest {
 
 		//Initialize Main page with driver
 		wikiMainPage = new WikiMainPage(getDriver());
-		String className = wikiMainPage.getAttributeValue(WikiMainPage.welcomeLink, "class");
+		String className = wikiMainPage.getAttributeValue(wikiMainPage.getWelcomeLink(), "class");
 		Assert.assertTrue(className.contains("mw-headline"), "wrong className");
 	}
 

@@ -21,13 +21,13 @@ public class WikiMainPage extends BasePage {
 	WebDriver driver;
 	
 	@FindBy(id = "Welcome_to_Wikipedia")
-	public static WebElement welcomeLink;
+	private WebElement welcomeLink;
 	
 	@FindBys({
 			@FindBy(xpath = ".//div[@id='simpleSearch']/input[1]"),
 			@FindBy(linkText = "Search")
 	})
-	public static WebElement searchBox;    //AND
+	private WebElement searchBox;    //AND
 	
 	@FindAll({ 
 		@FindBy(xpath = "//*[@id='searchform']/div/button"),
@@ -54,4 +54,7 @@ public class WikiMainPage extends BasePage {
 		return driver.getCurrentUrl();
 	}
 
+	public WebElement getWelcomeLink() {
+		return welcomeLink;
+	}
 }

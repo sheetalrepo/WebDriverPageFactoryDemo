@@ -29,7 +29,7 @@ import java.util.Map;
  */
 public class BasePage {
 	WebDriverWait wait;
-	static WebDriver driver = null;
+	WebDriver driver;
 	
 	BasePage(WebDriver driver){
 		System.out.println("Base Page Initialized......");

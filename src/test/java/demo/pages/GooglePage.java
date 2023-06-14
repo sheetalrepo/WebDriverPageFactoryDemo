@@ -13,9 +13,9 @@ public class GooglePage extends BasePage{
 	WebDriver driver;
 	
 	@FindBy(xpath="//strong[contains(text(),'English')]")
-	public static WebElement english;
+	WebElement english;
 	
-	public GooglePage(WebDriver driver) throws MalformedURLException {
+	public GooglePage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
