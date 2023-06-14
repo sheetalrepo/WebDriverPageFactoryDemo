@@ -35,7 +35,7 @@ _____________________________________________________________________
 //div[contains(@class,'footer-visible')])[1]
 //input[@id='abc' and @name='xyz'] 
 //span[text()='UniqueText']/following::input[1]	
-(//button[starts-with(text(),'Add')])[1]
+(//button[starts-with(text(),'Add')])[1]       
 
 _____________________________________________________________________
 
@@ -71,6 +71,6 @@ _____________________________________________________________________
 5. Performance Testing
 6. Try not to automate everything
    Automate which can be maintained and always run 100%
-   80-20 rule 
+   80-20 rule (Pareto principle)
    
  
