@@ -5,6 +5,19 @@ Webdriver + testng + pagefactory project
 
 For Youtube Channel: 
 https://www.youtube.com/watch?v=Hlp2uBzxJjQ&t=942s
+
+
+#Features:
+1. POM Page factory
+2. Parallel running
+3. ThreadLocal
+4. Retry Listeners
+5. Take Screenshot on Test Failure
+6. Reporting - pending
+7. Logging - pending
+
+
+
 _____________________________________________________________________
 
 #How to run framework:
@@ -14,11 +27,11 @@ mvn clean test -DsuiteXmlFile=testng_listeners.xml
 mvn clean test -DsuiteXmlFile=testng_parallel.xml
 
 #IntelliJ
-mvn clean test -DsuiteXmlFile="testng.xml"
+mvn clean test -DsuiteXmlFile="demo_seq.xml"
 mvn clean test -DsuiteXmlFile="testng_listeners.xml"
 mvn clean test -DsuiteXmlFile="testng_parallel.xml"
 
-mvn clean test -DsuiteXmlFile=testng_listeners.xml -Ddriver=firefox
+mvn clean test -DsuiteXmlFile="demo_list2.xml" -Ddriver="firefox"
 
 Report:
 /target/surefire-reports/index.html
