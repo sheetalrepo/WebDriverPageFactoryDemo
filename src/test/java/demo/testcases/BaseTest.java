@@ -2,9 +2,8 @@ package demo.testcases;
 
 import demo.helper.PropertyFileReader;
 import demo.helper.DriverFactory;
+import demo.utils.logs.Log;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,23 +22,24 @@ public class BaseTest {
     PropertyFileReader propertiesReader = null;
     Map<String, String> propertyMap;
 
-    Logger log = Logger.getLogger(BaseTest.class);
+    //Logger log = Logger.getLogger(BaseTest.class);
     
     public Map<String, String> getProperties() {
         if (propertiesReader == null) {
             propertiesReader = new PropertyFileReader();
         }
         propertyMap = propertiesReader.getPropertyMap();
-        log.info("### Fetched All Properties");
+        //log.info("### Fetched All Properties");
         return propertyMap;
     }
     @BeforeTest
     public void Setup(){
+        Log.info("@BeforeTest > Tests is starting");
         String browser = getProperties().get("driver");
         WebDriver driver = DriverFactory.createInstance(browser);
         threadLocalDriver.set(driver);  // Set ThreadLoacal with Driver
         System.out.println("BaseTest > @BeforeTest > Thread ID: "+Thread.currentThread().getId());
-        PropertyConfigurator.configure("log4j.properties");
+        //PropertyConfigurator.configure("log4j.properties");
     }
 
     //Get thread-safe driver
@@ -49,6 +49,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown(){
+        Log.info("@AfterTest > Tests is ending");
         getDriver().quit();
         System.out.println("BaseTest > @AfterTest > Thread ID: "+Thread.currentThread().getId());
         threadLocalDriver.remove();

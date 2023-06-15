@@ -2,6 +2,7 @@ package demo.testcases;
 
 import demo.pages.WikiIndexPage;
 import demo.pages.WikiSearchPage;
+import demo.utils.logs.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -14,6 +15,7 @@ public class WikiSearchPageTest extends BaseTest {
 	@Test
 	public void verifySearchPage() throws IOException, InterruptedException {
 		System.out.println("Search Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
+		Log.info("Search Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 
 		getDriver().get("https://www.wikipedia.org/");
 		getDriver().manage().window().maximize();

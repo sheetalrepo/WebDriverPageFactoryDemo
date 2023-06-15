@@ -1,5 +1,6 @@
 package demo.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,6 +19,7 @@ public class BasePage {
 	
 	BasePage(WebDriver driver){
 		System.out.println("Base Page Initialized......");
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		this.driver = driver;
 	}
 	
@@ -26,8 +28,11 @@ public class BasePage {
 	 * todo: wait time need to be picked from properties file
 	 */
 	public void waitForVisibilityOfElement(WebElement element) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	public void waitForVisibilityOfElementBy(By by) {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
 	}
 
 	public void click(WebElement element) {

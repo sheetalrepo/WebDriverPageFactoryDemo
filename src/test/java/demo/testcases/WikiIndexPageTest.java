@@ -3,6 +3,7 @@ package demo.testcases;
 
 import demo.pages.WikiIndexPage;
 import demo.pages.WikiMainPage;
+import demo.utils.logs.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.net.MalformedURLException;
@@ -16,7 +17,7 @@ public class WikiIndexPageTest extends BaseTest {
 	@Test
 	public void verifyEnglishLinkAndMore() throws MalformedURLException, InterruptedException {
 		System.out.println("Index Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
-		
+		Log.info(">>> Index Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 		getDriver().get("https://www.wikipedia.org/");
 		//getDriver().manage().window().maximize();
 		Thread.sleep(2000);

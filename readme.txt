@@ -1,26 +1,25 @@
-_____________________________________________________________________
-_____________________________________________________________________
-
-Webdriver + testng + pagefactory project
-
-For Youtube Channel: 
-https://www.youtube.com/watch?v=Hlp2uBzxJjQ&t=942s
-
-
-#Features:
+===============================================================================================================
+===============================================================================================================
+# WebDriver 4 + Testng + Page Factory Framework + Extent Report + Logger
+Prod Bug
+Channel: https://www.youtube.com/watch?v=Hlp2uBzxJjQ&t=942s
+===============================================================================================================
+===============================================================================================================
+# Features:
+===============================================================================================================
 1. POM Page factory
 2. Parallel running
 3. ThreadLocal
-4. Retry Listeners
-5. Take Screenshot on Test Failure
-6. Reporting - pending
-7. Logging - pending
+4. Rerun failed cases using IRetryAnalyzer, ITestListener (Listeners)
+5. Take Screenshot on Test Failure using ITestListener
+6. Reporting - Extent Report
+7. Logging
 
 
-
-_____________________________________________________________________
-
-#How to run framework:
+===============================================================================================================
+===============================================================================================================
+# How to run framework:
+===============================================================================================================
 Option 1: command line: single/multiple xml can be given
 mvn clean test -DsuiteXmlFile=testng.xml
 mvn clean test -DsuiteXmlFile=testng_listeners.xml
@@ -30,11 +29,16 @@ mvn clean test -DsuiteXmlFile=testng_parallel.xml
 mvn clean test -DsuiteXmlFile="demo_seq.xml"
 mvn clean test -DsuiteXmlFile="testng_listeners.xml"
 mvn clean test -DsuiteXmlFile="testng_parallel.xml"
-
 mvn clean test -DsuiteXmlFile="demo_list2.xml" -Ddriver="firefox"
 
-Report:
+
+#Report:
 /target/surefire-reports/index.html
+/extent-reports/extent-report.html
+
+#Logs
+/log4j2/log4j2-test-automation.log
+
 
 
 Option 2: manually from testng.xml(Right click and run)

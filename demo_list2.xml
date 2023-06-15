@@ -3,6 +3,7 @@
 
 <suite verbose="1"  name="WebdriverTestsNew" thread-count="1">
 
+	<!-- Use demo_list3.xml instead -->
 	<listeners>
 		<listener class-name="demo.listeners.TestListener" />
 		<listener class-name="demo.listeners.RetryListener" />
@@ -13,5 +14,5 @@
 			<class name="demo.testcases.ListenerTestCase"/>
 		</classes>
 	</test>
-	
+
 </suite>

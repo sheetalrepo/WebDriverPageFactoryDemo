@@ -1,7 +1,7 @@
 package demo.listeners;
 
-import demo.pages.BasePage;
 import demo.testcases.BaseTest;
+import demo.utils.extentreports.ExtentManager;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -9,7 +9,9 @@ import org.testng.ITestResult;
 import java.io.IOException;
 
 public class TestListener implements ITestListener {
-
+	private static String getTestMethodName(ITestResult iTestResult) {
+		return iTestResult.getMethod().getConstructorOrMethod().getName();
+	}
 	public void onTestFailure(ITestResult result) {
 		System.out.println("### Test Listener > Test Failed > Screenshot captured @ resource/screenshots");
 		String testClassRaw = result.getTestClass().toString().trim();
@@ -23,8 +25,6 @@ public class TestListener implements ITestListener {
 		}
 	}
 
-    
-	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 
