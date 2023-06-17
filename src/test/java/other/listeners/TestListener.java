@@ -1,13 +1,16 @@
-package demo.listeners;
+package other.listeners;
 
 import demo.testcases.BaseTest;
-import demo.utils.extentreports.ExtentManager;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import java.io.IOException;
 
+/**
+ * Not to use these classses
+ * Refer utils/listeners
+ */
 public class TestListener implements ITestListener {
 	private static String getTestMethodName(ITestResult iTestResult) {
 		return iTestResult.getMethod().getConstructorOrMethod().getName();

@@ -32,18 +32,20 @@ mvn clean test -DsuiteXmlFile="testng_parallel.xml"
 mvn clean test -DsuiteXmlFile="demo_list2.xml" -Ddriver="firefox"
 
 
-#Report:
-/target/surefire-reports/index.html
-/extent-reports/extent-report.html
-
 #Logs
 /log4j2/log4j2-test-automation.log
-
-
 
 Option 2: manually from testng.xml(Right click and run)
 No report generated in target folder
 
+
+#Report:
+/target/surefire-reports/index.html
+/extent-reports/extent-report.html
+
+Note:
+To generate extent report xml should have <listeners> values
+Pls note we are using listeners code from utils/listeners package, not from others/listeners
 
 _____________________________________________________________________
 

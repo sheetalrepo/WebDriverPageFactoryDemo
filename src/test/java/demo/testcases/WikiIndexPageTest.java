@@ -6,7 +6,11 @@ import demo.pages.WikiMainPage;
 import demo.utils.logs.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
+
+import static demo.utils.extentreports.ExtentTestManager.startTest;
 
 public class WikiIndexPageTest extends BaseTest {
 
@@ -14,8 +18,11 @@ public class WikiIndexPageTest extends BaseTest {
 	WikiMainPage wikiMainPage;
 	
 	//Index > Main Page
-	@Test
-	public void verifyEnglishLinkAndMore() throws MalformedURLException, InterruptedException {
+	@Test(priority = 0, description = "Index Page Test Method")
+	public void verifyEnglishLinkAndMore123(Method method) throws InterruptedException {
+		//ExtentReports Method
+		startTest(method.getName(), "Method Description will come here - index Page");
+		
 		System.out.println("Index Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 		Log.info(">>> Index Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 		getDriver().get("https://www.wikipedia.org/");

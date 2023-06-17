@@ -14,7 +14,7 @@ import static demo.utils.extentreports.ExtentTestManager.startTest;
  * 
  * This class using code from demo/utils/listeners
  * 
- * demo_list3.xml
+ * demo_list_extent.xml
  */
 public class ListenerTestCaseNew extends BaseTest {
 

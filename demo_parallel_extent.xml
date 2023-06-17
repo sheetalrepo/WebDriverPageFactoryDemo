@@ -2,22 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite verbose="1"  name="WebdriverTestsNew" parallel="tests" thread-count="3">
-
+	
+	<listeners>
+		<listener class-name="demo.utils.listeners.TestListener" />
+		<listener class-name="demo.utils.listeners.AnnotationTransformer" />
+	</listeners>
+	
 	<test name="1" >
 		<classes>
-			<class name="demo.testcases.GooglePageTest"/>
+			<class name="demo.testcases.WikiIndexPageTest"/>
 		</classes>
 	</test>
 
 	<test name="2">
 		<classes>
-			<class name="demo.testcases.YahooPageTest"/>
+			<class name="demo.testcases.WikiMainPageTest"/>
 		</classes>
 	</test>
 
 	<test name="3">
 		<classes>
-			<class name="demo.testcases.MsnPageTest"/>
+			<class name="demo.testcases.WikiSearchPageTest"/>
 		</classes>
 	</test>
 

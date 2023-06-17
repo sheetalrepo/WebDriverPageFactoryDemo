@@ -1,6 +1,6 @@
 package demo.testcases;
 
-import demo.listeners.Retry;
+import other.listeners.Retry;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
  * Old class without Extent Report
  * Retry is working fine 
  * 
- * This class uses code from demo/listeners
+ * This class uses code from other/listeners
  * 
  * demo_list1.xml
- * demo_list2.xml
+ * demo_z_old.xml
  */
 public class ListenerTestCase extends BaseTest {
 

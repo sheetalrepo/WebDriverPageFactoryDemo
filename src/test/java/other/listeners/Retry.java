@@ -1,4 +1,4 @@
-package demo.listeners;
+package other.listeners;
 
 import demo.helper.PropertyFileReader;
 import org.testng.IRetryAnalyzer;
@@ -7,6 +7,9 @@ import org.testng.ITestResult;
 /**
  * 
  * config.properties > failed_case_retry_count=5
+ * 
+ * Not to use these classses
+ * Refer utils/listeners
  */
 public class Retry implements IRetryAnalyzer {
 

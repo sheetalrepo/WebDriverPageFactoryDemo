@@ -6,14 +6,20 @@ import demo.utils.logs.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
+import java.lang.reflect.Method;
+
+import static demo.utils.extentreports.ExtentTestManager.startTest;
 
 public class WikiSearchPageTest extends BaseTest {
 	WikiIndexPage wikiIndexPage;
 	WikiSearchPage wikiSearchPage;
 	
 	//Index > Search Page
-	@Test
-	public void verifySearchPage() throws IOException, InterruptedException {
+	@Test(priority = 0, description = "Search Page Test Method")
+	public void verifySearchPage(Method method) throws InterruptedException {
+		//ExtentReports Method
+		startTest(method.getName(), "Method Description will come here - Search Page");
+
 		System.out.println("Search Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 		Log.info("Search Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 

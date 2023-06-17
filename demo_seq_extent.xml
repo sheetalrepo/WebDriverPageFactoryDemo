@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite verbose="1"  name="WebdriverTestsNew" thread-count="1">
+	<listeners>
+		<listener class-name="demo.utils.listeners.TestListener" />
+		<listener class-name="demo.utils.listeners.AnnotationTransformer" />
+	</listeners>
+	
+	<test name="2">
+		<classes>
+			<class name="demo.testcases.WikiIndexPageTest"/>
+			<class name="demo.testcases.WikiMainPageTest"/>
+			<class name="demo.testcases.WikiSearchPageTest"/>
+		</classes>
+	</test>
+	
+</suite>

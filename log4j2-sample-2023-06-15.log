@@ -1,0 +1,166 @@
+[INFO ] 2023-06-15 13:09:36.633 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 13:09:36.633 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 13:09:36.633 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 13:09:59.817 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 13:10:02.713 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 13:10:05.781 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:13:11.902 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:13:11.902 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:13:11.902 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:13:39.790 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:13:42.337 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:13:46.485 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:28:36.972 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:28:36.972 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:28:36.972 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:28:55.253 [TestNG-tests-1] Log - >>>>>>>>>>>>>>>>>>>>>>>>>> verifyEnglishLinkAndMore
+[INFO ] 2023-06-15 15:29:08.084 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:29:10.460 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:29:14.630 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:29:49.265 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:29:49.265 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:29:49.265 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:30:05.537 [TestNG-tests-1] Log - >>>>>>>>>>>>>>>>>>>>>>>>>> verifyEnglishLinkAndMore
+[INFO ] 2023-06-15 15:30:05.537 [TestNG-tests-1] Log - >>> Index Test: 16  |  Driver hashCode: 1348654618
+[INFO ] 2023-06-15 15:30:16.631 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:30:18.381 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:30:22.836 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:44:33.416 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:44:33.416 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:44:33.416 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:44:48.133 [TestNG-tests-3] Log - Search Test: 18  |  Driver hashCode: 1724281452
+[INFO ] 2023-06-15 15:44:48.360 [TestNG-tests-2] Log - >>> Main Test: 17  |  Driver hashCode: 1621400595
+[INFO ] 2023-06-15 15:44:49.317 [TestNG-tests-1] Log - >>> Index Test: 16  |  Driver hashCode: 471539028
+[INFO ] 2023-06-15 15:44:58.647 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:45:01.495 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:45:04.773 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:46:36.284 [main] Log - I am in onStart method 2
+[INFO ] 2023-06-15 15:46:36.324 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:46:46.446 [main] Log - verifyEnglishLinkAndMore test is starting.
+[INFO ] 2023-06-15 15:46:46.884 [main] Log - >>> Index Test: 1  |  Driver hashCode: 518159731
+[INFO ] 2023-06-15 15:46:55.723 [main] Log - verifyEnglishLinkAndMore test is succeed.
+[INFO ] 2023-06-15 15:46:55.739 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:46:57.994 [main] Log - I am in onFinish method 2
+[INFO ] 2023-06-15 15:52:28.431 [main] Log - I am in onStart method 2
+[INFO ] 2023-06-15 15:52:28.462 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 15:52:37.020 [main] Log - verifyEnglishLinkAndMore test is starting.
+[INFO ] 2023-06-15 15:52:37.483 [main] Log - >>> Index Test: 1  |  Driver hashCode: 1446521801
+[INFO ] 2023-06-15 15:52:46.232 [main] Log - verifyEnglishLinkAndMore test is succeed.
+[INFO ] 2023-06-15 15:52:46.241 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 15:52:48.741 [main] Log - I am in onFinish method 2
+[INFO ] 2023-06-15 16:37:31.355 [main] Log - I am in onStart method 2
+[INFO ] 2023-06-15 16:37:31.380 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 16:37:41.229 [main] Log - verifyEnglishLinkAndMore test is starting.
+[INFO ] 2023-06-15 16:37:41.724 [main] Log - >>> Index Test: 1  |  Driver hashCode: 2008821270
+[INFO ] 2023-06-15 16:37:50.236 [main] Log - verifyEnglishLinkAndMore test is succeed.
+[INFO ] 2023-06-15 16:37:50.250 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 16:37:52.355 [main] Log - I am in onFinish method 2
+[INFO ] 2023-06-15 16:40:33.703 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 16:40:41.341 [main] Log - >>> Main Test: 1  |  Driver hashCode: 1684580278
+[INFO ] 2023-06-15 16:40:45.884 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 16:41:58.139 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 16:42:06.219 [main] Log - >>> Index Test: 1  |  Driver hashCode: 50297459
+[INFO ] 2023-06-15 16:42:14.509 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 16:43:26.830 [main] Log - I am in onStart method 2
+[INFO ] 2023-06-15 16:43:26.848 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 16:43:34.347 [main] Log - verifyEnglishLinkAndMore123 test is starting.
+[INFO ] 2023-06-15 16:43:34.595 [main] Log - >>> Index Test: 1  |  Driver hashCode: 1434651019
+[INFO ] 2023-06-15 16:43:43.094 [main] Log - verifyEnglishLinkAndMore123 test is succeed.
+[INFO ] 2023-06-15 16:43:43.105 [main] Log - verifyLink test is starting.
+[INFO ] 2023-06-15 16:43:43.107 [main] Log - >>> Main Test: 1  |  Driver hashCode: 1434651019
+[INFO ] 2023-06-15 16:43:45.775 [main] Log - verifyLink test is succeed.
+[INFO ] 2023-06-15 16:43:45.777 [main] Log - verifySearchPage test is starting.
+[INFO ] 2023-06-15 16:43:45.777 [main] Log - Search Test: 1  |  Driver hashCode: 1434651019
+[INFO ] 2023-06-15 16:43:53.645 [main] Log - verifySearchPage test is succeed.
+[INFO ] 2023-06-15 16:43:53.648 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 16:43:55.374 [main] Log - I am in onFinish method 2
+[INFO ] 2023-06-15 18:24:41.628 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:24:41.628 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:24:41.629 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:24:53.161 [TestNG-tests-2] Log - >>> Yahoo Test: 17  |  Driver hashCode: 259112518
+[INFO ] 2023-06-15 18:24:53.203 [TestNG-tests-1] Log - >>> Google Test: 16  |  Driver hashCode: 138863133
+[INFO ] 2023-06-15 18:24:53.203 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 1665552533
+[INFO ] 2023-06-15 18:24:57.391 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:24:57.687 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:25:02.409 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:26:56.185 [TestNG-tests-1] Log - I am in onStart method 1
+[INFO ] 2023-06-15 18:26:56.185 [TestNG-tests-3] Log - I am in onStart method 3
+[INFO ] 2023-06-15 18:26:56.185 [TestNG-tests-2] Log - I am in onStart method 2
+[INFO ] 2023-06-15 18:26:56.205 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:26:56.205 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:26:56.205 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:27:06.238 [TestNG-tests-2] Log - yahooTest test is starting.
+[INFO ] 2023-06-15 18:27:06.238 [TestNG-tests-1] Log - googleTest test is starting.
+[INFO ] 2023-06-15 18:27:06.342 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:27:06.582 [TestNG-tests-1] Log - >>> Google Test: 16  |  Driver hashCode: 1233415868
+[INFO ] 2023-06-15 18:27:06.586 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 1324309272
+[INFO ] 2023-06-15 18:27:06.587 [TestNG-tests-2] Log - >>> Yahoo Test: 17  |  Driver hashCode: 1198038789
+[INFO ] 2023-06-15 18:27:10.943 [TestNG-tests-1] Log - googleTest test is succeed.
+[INFO ] 2023-06-15 18:27:10.954 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:27:11.237 [TestNG-tests-2] Log - yahooTest test is succeed.
+[INFO ] 2023-06-15 18:27:11.238 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:27:14.767 [TestNG-tests-3] Log - msnTest test is succeed.
+[INFO ] 2023-06-15 18:27:14.768 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:27:15.191 [TestNG-tests-2] Log - I am in onFinish method 2
+[INFO ] 2023-06-15 18:27:15.943 [TestNG-tests-1] Log - I am in onFinish method 1
+[INFO ] 2023-06-15 18:27:17.647 [TestNG-tests-3] Log - I am in onFinish method 3
+[INFO ] 2023-06-15 18:28:08.451 [TestNG-tests-1] Log - I am in onStart method 1
+[INFO ] 2023-06-15 18:28:08.451 [TestNG-tests-3] Log - I am in onStart method 3
+[INFO ] 2023-06-15 18:28:08.451 [TestNG-tests-2] Log - I am in onStart method 2
+[INFO ] 2023-06-15 18:28:08.477 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:28:08.477 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:28:08.477 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:28:18.302 [TestNG-tests-2] Log - yahooTest test is starting.
+[INFO ] 2023-06-15 18:28:18.302 [TestNG-tests-1] Log - googleTest test is starting.
+[INFO ] 2023-06-15 18:28:18.755 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:28:18.857 [TestNG-tests-2] Log - >>> Yahoo Test: 17  |  Driver hashCode: 1215983226
+[INFO ] 2023-06-15 18:28:18.857 [TestNG-tests-1] Log - >>> Google Test: 16  |  Driver hashCode: 748817766
+[INFO ] 2023-06-15 18:28:18.857 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 48992546
+[INFO ] 2023-06-15 18:28:24.023 [TestNG-tests-2] Log - yahooTest test is succeed.
+[INFO ] 2023-06-15 18:28:24.027 [TestNG-tests-1] Log - googleTest test is succeed.
+[INFO ] 2023-06-15 18:28:24.045 [TestNG-tests-2] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:28:24.045 [TestNG-tests-1] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:28:28.223 [TestNG-tests-1] Log - I am in onFinish method 1
+[INFO ] 2023-06-15 18:28:30.027 [TestNG-tests-3] Log - msnTest test is skipped.
+[INFO ] 2023-06-15 18:28:30.028 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:28:30.029 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 48992546
+[INFO ] 2023-06-15 18:28:30.136 [TestNG-tests-2] Log - I am in onFinish method 2
+[INFO ] 2023-06-15 18:28:34.262 [TestNG-tests-3] Log - msnTest test is skipped.
+[INFO ] 2023-06-15 18:28:34.263 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:28:34.263 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 48992546
+[INFO ] 2023-06-15 18:28:38.409 [TestNG-tests-3] Log - msnTest test is skipped.
+[INFO ] 2023-06-15 18:28:38.410 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:28:38.411 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 48992546
+[INFO ] 2023-06-15 18:28:43.194 [TestNG-tests-3] Log - msnTest test is skipped.
+[INFO ] 2023-06-15 18:28:43.195 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:28:43.196 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 48992546
+[INFO ] 2023-06-15 18:28:49.837 [TestNG-tests-3] Log - msnTest test is skipped.
+[INFO ] 2023-06-15 18:28:49.838 [TestNG-tests-3] Log - msnTest test is starting.
+[INFO ] 2023-06-15 18:28:49.838 [TestNG-tests-3] Log - >>> MSN Test: 18  |  Driver hashCode: 48992546
+[INFO ] 2023-06-15 18:28:54.531 [TestNG-tests-3] Log - msnTest test is failed.
+[INFO ] 2023-06-15 18:28:54.678 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:28:57.061 [TestNG-tests-3] Log - I am in onFinish method 3
+[INFO ] 2023-06-15 18:33:20.588 [main] Log - I am in onStart method 2
+[INFO ] 2023-06-15 18:33:20.612 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-15 18:33:29.073 [main] Log - testOrkut test is starting.
+[INFO ] 2023-06-15 18:33:30.522 [main] Log - testOrkut test is skipped.
+[INFO ] 2023-06-15 18:33:30.523 [main] Log - testOrkut test is starting.
+[INFO ] 2023-06-15 18:33:30.859 [main] Log - testOrkut test is skipped.
+[INFO ] 2023-06-15 18:33:30.861 [main] Log - testOrkut test is starting.
+[INFO ] 2023-06-15 18:33:31.154 [main] Log - testOrkut test is skipped.
+[INFO ] 2023-06-15 18:33:31.155 [main] Log - testOrkut test is starting.
+[INFO ] 2023-06-15 18:33:31.446 [main] Log - testOrkut test is skipped.
+[INFO ] 2023-06-15 18:33:31.447 [main] Log - testOrkut test is starting.
+[INFO ] 2023-06-15 18:33:31.747 [main] Log - testOrkut test is skipped.
+[INFO ] 2023-06-15 18:33:31.748 [main] Log - testOrkut test is starting.
+[INFO ] 2023-06-15 18:33:31.955 [main] Log - testOrkut test is failed.
+[INFO ] 2023-06-15 18:33:32.072 [main] Log - testRetryListener test is starting.
+[INFO ] 2023-06-15 18:33:35.008 [main] Log - testRetryListener test is skipped.
+[INFO ] 2023-06-15 18:33:35.012 [main] Log - testRetryListener test is starting.
+[INFO ] 2023-06-15 18:33:37.908 [main] Log - testRetryListener test is skipped.
+[INFO ] 2023-06-15 18:33:37.909 [main] Log - testRetryListener test is starting.
+[INFO ] 2023-06-15 18:33:39.071 [main] Log - testRetryListener test is succeed.
+[INFO ] 2023-06-15 18:33:39.074 [main] Log - testTwitter test is starting.
+[INFO ] 2023-06-15 18:33:40.074 [main] Log - testTwitter test is succeed.
+[INFO ] 2023-06-15 18:33:40.077 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-15 18:33:42.136 [main] Log - I am in onFinish method 2

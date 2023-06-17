@@ -1,27 +1,15 @@
-[INFO ] 2023-06-15 13:09:36.633 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 13:09:36.633 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 13:09:36.633 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 13:09:59.817 [TestNG-tests-2] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 13:10:02.713 [TestNG-tests-1] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 13:10:05.781 [TestNG-tests-3] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:13:11.902 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:13:11.902 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:13:11.902 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:13:39.790 [TestNG-tests-2] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:13:42.337 [TestNG-tests-1] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:13:46.485 [TestNG-tests-3] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:28:36.972 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:28:36.972 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:28:36.972 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:28:55.253 [TestNG-tests-1] Log - >>>>>>>>>>>>>>>>>>>>>>>>>> verifyEnglishLinkAndMore
-[INFO ] 2023-06-15 15:29:08.084 [TestNG-tests-2] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:29:10.460 [TestNG-tests-1] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:29:14.630 [TestNG-tests-3] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:29:49.265 [TestNG-tests-3] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:29:49.265 [TestNG-tests-2] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:29:49.265 [TestNG-tests-1] Log - @BeforeTest > Tests is starting
-[INFO ] 2023-06-15 15:30:05.537 [TestNG-tests-1] Log - >>>>>>>>>>>>>>>>>>>>>>>>>> verifyEnglishLinkAndMore
-[INFO ] 2023-06-15 15:30:05.537 [TestNG-tests-1] Log - >>> Index Test: 16  |  Driver hashCode: 1348654618
-[INFO ] 2023-06-15 15:30:16.631 [TestNG-tests-2] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:30:18.381 [TestNG-tests-1] Log - @AfterTest > Tests is ending
-[INFO ] 2023-06-15 15:30:22.836 [TestNG-tests-3] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-17 12:07:10.850 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-17 12:07:29.590 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-17 12:08:57.695 [main] Log - I am in onStart method 2
+[INFO ] 2023-06-17 12:08:57.731 [main] Log - @BeforeTest > Tests is starting
+[INFO ] 2023-06-17 12:09:05.600 [main] Log - verifyEnglishLinkAndMore123 test is starting.
+[INFO ] 2023-06-17 12:09:05.876 [main] Log - >>> Index Test: 1  |  Driver hashCode: 934993374
+[INFO ] 2023-06-17 12:09:15.431 [main] Log - verifyEnglishLinkAndMore123 test is succeed.
+[INFO ] 2023-06-17 12:09:15.442 [main] Log - verifyLink test is starting.
+[INFO ] 2023-06-17 12:09:15.444 [main] Log - >>> Main Test: 1  |  Driver hashCode: 934993374
+[INFO ] 2023-06-17 12:09:18.155 [main] Log - verifyLink test is succeed.
+[INFO ] 2023-06-17 12:09:18.156 [main] Log - verifySearchPage test is starting.
+[INFO ] 2023-06-17 12:09:18.158 [main] Log - Search Test: 1  |  Driver hashCode: 934993374
+[INFO ] 2023-06-17 12:09:25.838 [main] Log - verifySearchPage test is succeed.
+[INFO ] 2023-06-17 12:09:25.840 [main] Log - @AfterTest > Tests is ending
+[INFO ] 2023-06-17 12:09:27.900 [main] Log - I am in onFinish method 2

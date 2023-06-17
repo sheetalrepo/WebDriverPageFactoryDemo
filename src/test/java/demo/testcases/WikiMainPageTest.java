@@ -6,14 +6,20 @@ import demo.utils.logs.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
+import java.lang.reflect.Method;
+
+import static demo.utils.extentreports.ExtentTestManager.startTest;
 
 public class WikiMainPageTest extends BaseTest {
 
 	WikiIndexPage wikiIndexPage;
 	WikiMainPage wikiMainPage;
-	
-	@Test
-	public void verifyLink() throws IOException, InterruptedException {
+
+	@Test(priority = 0, description = "Main Page Test Method")
+	public void verifyLink(Method method) throws InterruptedException {
+		//ExtentReports Method
+		startTest(method.getName(), "Method Description will come here - Main Page");
+
 		System.out.println("Main Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 		Log.info(">>> Main Test: "+Thread.currentThread().getId() + "  |  Driver hashCode: "+ getDriver().hashCode());
 
