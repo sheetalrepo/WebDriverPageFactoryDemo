@@ -47,7 +47,8 @@ Note:
 To generate extent report xml should have <listeners> values
 Pls note we are using listeners code from utils/listeners package, not from others/listeners
 
-_____________________________________________________________________
+===============================================================================================================
+#XPATHS
 
 //td[text()='UserID']
 //input[contains(@name,'abc')]
@@ -56,7 +57,7 @@ _____________________________________________________________________
 //span[text()='UniqueText']/following::input[1]	
 (//button[starts-with(text(),'Add')])[1]       
 
-_____________________________________________________________________
+===============================================================================================================
 
 Locating Element on a Page
 A.ID
@@ -69,8 +70,7 @@ G.CSS
 H.XPATH
 I.JAVA Script
 
-_____________________________________________________________________
-
+===============================================================================================================
 # Best Practices For Efficient Test Automation
 1. Avoid using Thread.sleep
    Use implicit, explicit, fluent waits
@@ -81,6 +81,7 @@ _____________________________________________________________________
    Check which browser get max traffic 
 6. Implement Logging and Reporting
 7. Use Design Patterns and Principles i.e. Page Object Model (POM)
+8. @CacheLookup: Use Cache lookup in Page Factory to speed up the web element searches
    
 # Avoid
 1. File download
@@ -92,4 +93,4 @@ _____________________________________________________________________
    Automate which can be maintained and always run 100%
    80-20 rule (Pareto principle)
    
- 
+ ===============================================================================================================
